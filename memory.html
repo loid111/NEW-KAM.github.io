@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แฟนผมเอง</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&display=swap');
+
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #4A90E2;
+            margin-bottom: 0.5em;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .welcome-message {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .image-item {
+            margin: 10px;
+            width: calc(25% - 20px);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .image-item img {
+            border-radius: 10px;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .image-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .image-item {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>แฟนผมเอง</h1>
+    <div class="welcome-message">ยินดีต้อนรับนะครับแฟนของผม</div>
+    <div class="images-container" id="images-container">
+        <div class="image-item" style="animation-delay: 0.1s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288045932838916106/34f79600-6c16-4948-9195-5952f5d1956a.jpg?ex=66f3c1c1&is=66f27041&hm=a7fa9dbaa0432fed1ba68b5ba23e852ac6340682aaf325e5e436144a5a666b2f&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.2s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288045933787086889/d4ff52cb-df02-44e6-9cba-ae01ee06b879.jpg?ex=66f3c1c1&is=66f27041&hm=166a1564765847ef35e7bdcbbabded225b37b934da47387c9cfcc454d7c7894e&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.3s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288045932012634152/8201e791-409d-40bf-b042-c6063406d279.jpg?ex=66f3c1c0&is=66f27040&hm=2d379d9dc5a5027e74a74ee8eb376b5633fe05c867cbbf8154914d0159926a98&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.4s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288048634256167003/fd8116ba-a778-4408-992d-efa7a3dcb7df.jpg?ex=66f3c445&is=66f272c5&hm=7dd94f3f523155a0f8685beac56408a5d73b14eda67cdf97886407d2552f5b01&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.5s;">
+            <img src="" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.6s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288048632595087371/29e362d7-3179-471b-b908-70b4918ed9bd.jpg?ex=66f3c444&is=66f272c4&hm=b459dac131eef9aded7f34d5327597583f8b366f40554d6c6fc231164e867074&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.7s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288048632972705802/2dcbc67f-129b-4617-ac62-720f6da51639.jpg?ex=66f3c444&is=66f272c4&hm=333271cb0a219c619440c1250ae1fe62db6d95cadafcdc3b685f04f47cf8e092&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.8s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288048633752584203/37d23aa5-daa3-4178-8838-6f7439be990a.jpg?ex=66f3c445&is=66f272c5&hm=b92001144fcc9d2739eb879bd445484936d39bf8901e00295de803cc827cb874&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 0.9s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288045934743126058/da1b5221-21de-401a-8bba-b91b7bc58900.jpg?ex=66f3c1c1&is=66f27041&hm=023877739617d4d656ffb07a89a051be0f4d9bed48f84d1a0c367b001f3bfc5a&" alt="ความทรงจำดีๆ">
+        </div>
+        <div class="image-item" style="animation-delay: 1s;">
+            <img src="https://cdn.discordapp.com/attachments/1192876256493060116/1288050008473604108/2f106dfb-31a3-4c8e-8e43-75924fd86dd6.jpg?ex=66f3c58c&is=66f2740c&hm=d469cc80e0a71e390ccdcff0f3b457fd28121580a805c96273cbbc2ee68d90bf&" alt="ความทรงจำดีๆ">
+        </div>
+    </div>
+</body>
+</html>
